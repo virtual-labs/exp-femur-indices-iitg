@@ -2,35 +2,86 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "Femur measurements are most important in:",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Embryology",
+        "b": "Neuroanatomy",
+        "c": "Forensic anthropology",
+        "d": "Histology"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Incorrect. Embryology focuses on developmental processes rather than skeletal measurements.",
+        "b": "Incorrect. Neuroanatomy deals with the structure of the nervous system.",
+        "c": "Correct. Femur measurements are extensively used in forensic anthropology for stature estimation, sex determination, and identification of skeletal remains.",
+        "d": "Incorrect. Histology is the study of microscopic tissue structure."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which femoral measurement is most useful for estimating stature?",
+      "answers": {
+        "a": "Neck length",
+        "b": "Head diameter",
+        "c": "Maximum length",
+        "d": "Shaft circumference"
+      },
+      "explanations": {
+        "a": "Incorrect. Neck length is not commonly used for stature estimation.",
+        "b": "Incorrect. Head diameter is more useful in sex determination.",
+        "c": "Correct. The maximum length of the femur is one of the most reliable measurements used to estimate an individual's stature.",
+        "d": "Incorrect. Shaft circumference is not a standard parameter for stature estimation."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Bicondylar width of the femur is the distance between:",
+      "answers": {
+        "a": "Medial and lateral epicondyles",
+        "b": "Anterior and posterior condyles",
+        "c": "Intercondylar notch margins",
+        "d": "Medial condyle and shaft"
+      },
+      "explanations": {
+        "a": "Correct. Bicondylar width is measured as the maximum distance between the medial and lateral epicondyles of the femur.",
+        "b": "Incorrect. This does not represent the transverse width of the distal femur.",
+        "c": "Incorrect. The intercondylar notch is not used for bicondylar width measurement.",
+        "d": "Incorrect. Bicondylar width involves both condyles, not the shaft."
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "The linea aspera is located on the:",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Anterior surface of the femur",
+        "b": "Medial surface of the femur",
+        "c": "Posterior surface of the femur",
+        "d": "Interior surface of femur"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Incorrect. The anterior surface of the femur is relatively smooth.",
+        "b": "Incorrect. The linea aspera is not located on the medial surface.",
+        "c": "Correct. The linea aspera is a prominent longitudinal ridge found on the posterior surface of the femoral shaft.",
+        "d": "Incorrect. There is no anatomical structure referred to as the interior surface of the femur."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "The angle between the neck and the shaft of the femur is called:",
+      "answers": {
+        "a": "Femoral torsion angle",
+        "b": "Carrying angle",
+        "c": "Neck-shaft angle",
+        "d": "Q angle"
+      },
+      "explanations": {
+        "a": "Incorrect. Femoral torsion angle refers to the rotational relationship between the femoral neck and condyles.",
+        "b": "Incorrect. The carrying angle is associated with the elbow joint.",
+        "c": "Correct. The angle formed between the axis of the femoral neck and the shaft is known as the neck-shaft angle.",
+        "d": "Incorrect. The Q angle is a measurement related to the alignment of the knee."
       },
       "correctAnswer": "c",
       "difficulty": "beginner"

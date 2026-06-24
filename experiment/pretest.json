@@ -2,37 +2,71 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "The maximum length of the femur is measured between which two points?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Head of the femur and lesser trochanter",
+        "b": "Head of femur and medial condyle",
+        "c": "Most superior point of the head and most inferior point of medial condyle",
+        "d": "Greater trochanter and lateral condyle"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Incorrect. The lesser trochanter is not used as a landmark for maximum femur length measurement.",
+        "b": "Incorrect. Maximum length is not measured specifically to the medial condyle alone.",
+        "c": "Correct. Maximum femur length is measured from the highest point on the femoral head to the lowest point on the medial condyle using an osteometric board.",
+        "d": "Incorrect. These landmarks do not represent the maximum anatomical length of the femur."
       },
-      "correctAnswer": "a",
+      "correctAnswer": "c",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "The standard instrument used to measure the maximum length of a femur is:",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Sliding caliper",
+        "b": "Vernier caliper",
+        "c": "Measuring tape",
+        "d": "Osteometric board"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Incorrect. Sliding calipers are used for smaller linear measurements.",
+        "b": "Incorrect. Vernier calipers are used for precise diameter and breadth measurements.",
+        "c": "Incorrect. Measuring tapes are not suitable for accurate osteometric measurements.",
+        "d": "Correct. An osteometric board is the standard instrument used to measure the maximum length of long bones such as the femur."
       },
-      "correctAnswer": "c",
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Bicondylar length of the femur is measured from:",
+      "answers": {
+        "a": "Head of femur to medial condyle",
+        "b": "Greater trochanter to lateral condyle",
+        "c": "Head of femur to intercondylar notch",
+        "d": "Head of femur to a plane touching both condyles"
+      },
+      "explanations": {
+        "a": "Incorrect. Bicondylar length is not measured to a single condyle.",
+        "b": "Incorrect. The greater trochanter is not used as the proximal landmark.",
+        "c": "Incorrect. The intercondylar notch is not used in bicondylar length measurement.",
+        "d": "Correct. Bicondylar length is measured from the highest point of the femoral head to a plane that touches both femoral condyles."
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "The vertical diameter of the head of femur is important for determining:",
+      "answers": {
+        "a": "Age",
+        "b": "Sex",
+        "c": "Race",
+        "d": "Side of bone"
+      },
+      "explanations": {
+        "a": "Incorrect. Femoral head diameter is not primarily used for age estimation.",
+        "b": "Correct. The vertical diameter of the femoral head is a commonly used parameter for sex determination because males generally have larger femoral heads than females.",
+        "c": "Incorrect. Although population differences may exist, this measurement is primarily used for sex estimation.",
+        "d": "Incorrect. Side determination relies on anatomical features rather than head diameter."
+      },
+      "correctAnswer": "b",
       "difficulty": "beginner"
     }
   ]
