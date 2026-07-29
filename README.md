@@ -1,24 +1,23 @@
 ## Introduction
 
-
-<b>Discipline | <b>Fill your discipline name here
+<b>Discipline | <b> Anthropology
 :--|:--|
-<b> Lab | <b> Fill your lab name here
-<b> Experiment|     <b> Fill your experiment name and number here
+<b> Lab | <b> Digital Anthropology
+<b> Experiment | <b> Femur Indices (Experiment 1)
 
 ### About the Experiment 
 
-Fill a brief description of this experiment here
+This experiment demonstrates osteometric indices of the femur using post-cranial measurements. Students can calculate indices such as shaft slenderness, physiological-maximum length, trochanteric proportion, and head size/shape to study femur morphology.
 
-<b>Name of Developer | <b> Fill the name of experiment owner here 
+<b>Name of Developer | <b> Amarjeet Singh
 :--|:--|
-<b> Institute | <b>  
-<b> Email id|     <b>  
-<b> Department |  
+<b> Institute | <b> IIT Guwahati
+<b> Email id | <b> your.email@iitg.ac.in
+<b> Department | <b> Anthropology
 
 ### Contributors List
 
 SrNo | Name | Faculty or Student | Department| Institute | Email id
 :--|:--|:--|:--|:--|:--|
-1 | . | . | . | . | .
-2 | . | . | . | . | .
+1 | Amarjeet Prasad | Student | Anthropology | IIT Guwahati | your.email@iitg.ac.in
+2 | - | - | - | - | -
