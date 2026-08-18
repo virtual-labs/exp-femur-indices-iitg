@@ -59,7 +59,14 @@ let offset = { x: 0, y: 0 };
 function setMode(mode, event) {
 
     currentMode = mode;
+    // Show/Hide controls
+    const controls = document.getElementById("controls");
 
+    if (mode === "max_length" || mode === "physio_length" ||mode === "troch_length" ||  mode === "femur_indices") {
+        controls.style.display = "none";
+    } else {
+        controls.style.display = "block";
+    }
     document.querySelectorAll(".nav-btn")
         .forEach(btn => btn.classList.remove("active"));
 
@@ -598,46 +605,46 @@ function createScale() {
    CREATE CALIPER SCALE
 ============================== */
 
-function createCaliperScale() {
+// function createCaliperScale() {
 
-    const scale = document.querySelector(".caliper-scale");
+//     const scale = document.querySelector(".caliper-scale");
 
-    scale.innerHTML = "";
+//     scale.innerHTML = "";
 
-    const PX_PER_CM = 20;
+//     const PX_PER_CM = 20;
 
-    for (let i = 0; i <= 20; i++) {
+//     for (let i = 0; i <= 20; i++) {
 
-        const tick = document.createElement("div");
+//         const tick = document.createElement("div");
 
-        tick.classList.add("cal-tick");
+//         tick.classList.add("cal-tick");
 
-        tick.style.left = (i * PX_PER_CM) + "px";
+//         tick.style.left = (i * PX_PER_CM) + "px";
 
-        if (i % 10 === 0) {
-            tick.classList.add("large");
-        }
-        else if (i % 5 === 0) {
-            tick.classList.add("medium");
-        }
-        else {
-            tick.classList.add("small");
-        }
+//         if (i % 10 === 0) {
+//             tick.classList.add("large");
+//         }
+//         else if (i % 5 === 0) {
+//             tick.classList.add("medium");
+//         }
+//         else {
+//             tick.classList.add("small");
+//         }
 
-        scale.appendChild(tick);
+//         scale.appendChild(tick);
 
-        /* labels every 1 cm */
-        const label = document.createElement("div");
+//         /* labels every 1 cm */
+//         const label = document.createElement("div");
 
-        label.classList.add("cal-label");
+//         label.classList.add("cal-label");
 
-        label.style.left = (i * PX_PER_CM) + "px";
+//         label.style.left = (i * PX_PER_CM) + "px";
 
-        label.innerText = i;
+//         label.innerText = i;
 
-        scale.appendChild(label);
-    }
-}
+//         scale.appendChild(label);
+//     }
+// }
 
 /* ==============================
    GONIOMETER SCALE
@@ -713,5 +720,5 @@ function createGonioScale() {
 
 setMode("max_length");
 createScale();
-createCaliperScale();
+// createCaliperScale();
 createGonioScale();                                            

@@ -1,4 +1,6 @@
+<<<<<<< Updated upstream
 ### Procedure
+=======
 Femur Measurements
 
 Method
@@ -190,3 +192,4 @@ Precautions
 
  
 
+>>>>>>> Stashed changes
