@@ -10,6 +10,7 @@
         "d": "answer4"
       },
       "explanations": {
+<<<<<<< Updated upstream
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
         "b": "Explanation 2",
         "c": "Explanation 2",
@@ -34,6 +35,66 @@
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
+=======
+        "a": "The lesser trochanter is not used as the endpoint for measuring the maximum length of the femur.",
+        "b": "The head of the femur and medial condyle are not the standard anatomical landmarks used for maximum femoral length.",
+        "c": "Maximum femoral length is measured as the straight distance between the most superior point of the femoral head and the most inferior point of the medial condyle.",
+        "d": "The greater trochanter and lateral condyle are not the standard endpoints for maximum femoral length."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "The standard instrument used to measure the maximum length of a femur is:",
+      "answers": {
+        "a": "Sliding caliper",
+        "b": "Vernier caliper",
+        "c": "Measuring tape",
+        "d": "Osteometric board"
+      },
+      "explanations": {
+        "a": "A sliding caliper is generally used for smaller linear measurements such as breadths and diameters.",
+        "b": "A Vernier caliper is useful for precise smaller dimensions but is not the standard instrument for maximum femoral length.",
+        "c": "A measuring tape is less suitable for obtaining a standardized straight-line measurement of a long bone.",
+        "d": "An osteometric board is the standard instrument used to measure the maximum length of long bones such as the femur."
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Bicondylar length of the femur is measured from:",
+      "answers": {
+        "a": "Head of femur to medial condyle",
+        "b": "Greater trochanter to lateral condyle",
+        "c": "Head of femur to intercondylar notch",
+        "d": "Head of femur to a plane touching both condyles"
+      },
+      "explanations": {
+        "a": "The head of the femur to the medial condyle does not define the standard bicondylar length.",
+        "b": "The greater trochanter is not used as the proximal reference point for bicondylar length.",
+        "c": "The intercondylar notch is not the distal reference for this measurement.",
+        "d": "Bicondylar length is measured from the head of the femur to a plane touching the most distal points of both femoral condyles."
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "The vertical diameter of the head of femur is important for determining:",
+      "answers": {
+        "a": "Age",
+        "b": "Sex",
+        "c": "Race",
+        "d": "Side of bone"
+      },
+      "explanations": {
+        "a": "The vertical diameter of the femoral head is not primarily used for age determination.",
+        "b": "The vertical diameter of the femoral head is an important anthropometric measurement used in sex estimation.",
+        "c": "Although population variation can exist, this measurement is primarily useful for sex estimation rather than determining race.",
+        "d": "The vertical diameter does not determine which side of the body the femur belongs to."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+>>>>>>> Stashed changes
     }
   ]
 }

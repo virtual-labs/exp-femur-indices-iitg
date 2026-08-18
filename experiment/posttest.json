@@ -10,10 +10,51 @@
         "d": "answer4"
       },
       "explanations": {
+<<<<<<< Updated upstream
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
         "b": "Explanation 2",
         "c": "Explanation 2",
         "d": "Explanation 2"
+=======
+        "a": "Femur measurements are not primarily used in embryology.",
+        "b": "Femur measurements are not primarily related to neuroanatomy.",
+        "c": "Femur measurements are important in forensic anthropology for estimating biological characteristics such as stature and sex.",
+        "d": "Femur measurements are not primarily used in histology."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which femoral measurement is most useful for estimating stature?",
+      "answers": {
+        "a": "Neck length",
+        "b": "Head diameter",
+        "c": "Maximum length",
+        "d": "Shaft circumference"
+      },
+      "explanations": {
+        "a": "Femoral neck length is not the primary measurement used for estimating stature.",
+        "b": "Head diameter may be useful for other anthropological assessments but is not the primary measurement for stature estimation.",
+        "c": "Maximum femoral length is one of the most important measurements used in estimating stature because it has a strong relationship with overall body height.",
+        "d": "Shaft circumference is not the primary femoral measurement used for stature estimation."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Bicondylar width of femur is the distance between:",
+      "answers": {
+        "a": "Medial and lateral epicondyles",
+        "b": "Anterior and posterior condyles",
+        "c": "Intercondylar notch margins",
+        "d": "Medial condyle and shaft"
+      },
+      "explanations": {
+        "a": "Bicondylar width is measured as the maximum distance between the most lateral point of the lateral condyle and the most medial point of the medial condyle.",
+        "b": "The anterior and posterior surfaces do not define the standard bicondylar width.",
+        "c": "The intercondylar notch margins are used for other anatomical measurements and do not define bicondylar width.",
+        "d": "The distance between the medial condyle and shaft is not the definition of bicondylar width."
+>>>>>>> Stashed changes
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
@@ -21,6 +62,7 @@
     {
       "question": "This is a Sample Question 2?",
       "answers": {
+<<<<<<< Updated upstream
         "a": "answer1",
         "b": "answer2",
         "c": "answer3",
@@ -31,6 +73,35 @@
         "b": "Explanation 2",
         "c": "Explanation 2",
         "d": "Explanation 2"
+=======
+        "a": "Anterior surface of the femur",
+        "b": "Medial surface of the femur",
+        "c": "Posterior surface of the femur",
+        "d": "Interior surface of the femur"
+      },
+      "explanations": {
+        "a": "The linea aspera is not located on the anterior surface.",
+        "b": "The linea aspera is not primarily located on the medial surface.",
+        "c": "The linea aspera is a prominent longitudinal ridge located on the posterior surface of the shaft of the femur.",
+        "d": "Interior surface is not an anatomical surface designation used for the location of the linea aspera."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "The angle between the neck and the shaft of the femur is called:",
+      "answers": {
+        "a": "Femoral torsion angle",
+        "b": "Carrying angle",
+        "c": "Neck-shaft angle",
+        "d": "Intercondylar angle"
+      },
+      "explanations": {
+        "a": "The femoral torsion angle refers to the angle between the axis of the femoral neck and the transverse axis of the femoral condyles.",
+        "b": "The carrying angle is an angle of the upper limb formed at the elbow and is not a femoral measurement.",
+        "c": "The angle formed between the longitudinal axis of the femoral neck and the longitudinal axis of the femoral shaft is called the neck-shaft angle.",
+        "d": "The intercondylar angle is not the angle between the femoral neck and shaft."
+>>>>>>> Stashed changes
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
