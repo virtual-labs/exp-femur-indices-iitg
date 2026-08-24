@@ -1,13 +1,132 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<!-- Add CSS at the head of HTML file -->
-    <link rel="stylesheet" href="./css/main.css">
+    <meta charset="UTF-8">
+    <title>Osteometry of Femur Simulation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/femur.css">
 </head>
 <body>
-		<!-- Your code goes here-->
 
-	<!-- Add JS at the bottom of HTML file --> 
-        <script src="./js/main.js"></script>
+<!-- ================= SIDEBAR ================= -->
+<div id="sidebar">
+    <h2>Femur Lab</h2>
+
+    <button class="nav-btn active" onclick="setMode('max_length', event)">
+        1. Maximum Length
+    </button>
+
+    <button class="nav-btn" onclick="setMode('physio_length', event)">
+        2. Physiological Length
+    </button>
+
+    <button class="nav-btn" onclick="setMode('troch_length', event)">
+        3. Trochanteric Length
+    </button>
+
+    <button class="nav-btn" onclick="setMode('shaft_diam', event)">
+        4. Middle Shaft Diameter
+    </button>
+
+    <button class="nav-btn" onclick="setMode('head_trans', event)">
+        5. Head Transverse Diameter
+    </button>
+
+    <button class="nav-btn" onclick="setMode('head_vert', event)">
+        6. Head Vertical Diameter
+    </button>
+
+    <button class="nav-btn" onclick="setMode('angle_neck', event)">
+        7. Collodiphysial Angle
+    </button>
+
+    <button class="nav-btn" onclick="setMode('angle_torsion', event)">
+        8. Femoral Torsion Angle
+    </button>
+
+        <button class="nav-btn" onclick="setMode('femur_indices', event)">
+        9. Femur Indices
+    </button>
+
+</div>
+
+<!-- ================= WORKSPACE ================= -->
+<div id="workspace">
+
+    <!-- FEMUR IMAGE -->
+    <img id="bone" src="images/femur.png" alt="Femur Bone">
+
+    <!-- Osteometric Board -->
+    <div id="tool-board">
+        <div id="fixed-wall" class="board-wall"></div>
+        <div id="movable-wall" class="board-wall">Drag</div>
+    </div>
+
+    <!-- Sliding Calipers -->
+    <div id="tool-caliper">
+        <div class="caliper-jaw" id="caliper-jaw-1"></div>
+        <div class="caliper-jaw" id="caliper-jaw-2"></div>
+        <div id="caliper-bar"></div>
+    </div>
+
+    <!-- Goniometer -->
+    <div id="tool-goniometer">
+        <div id="goniometer">
+            <div class="gonio-arc"></div>
+            <div class="gonio-center" id="gonio-center"></div>
+            <div class="gonio-arm" id="gonio-arm-1"></div>
+            <div class="gonio-arm" id="gonio-arm-2"></div>
+        </div>
+    </div>
+
+</div>
+
+<!-- ================= INDICES SECTION ================= -->
+<div id="tool-indices" style="display:none; padding:20px;">
+
+    <h3>Enter Measured Values to Calculate Femur Indices</h3>
+
+    <label>Shaft Slenderness Index (Maximum Length)</label>
+    <input type="number" id="ans_slender_max" step="0.01"><br><br>
+
+    <label>Shaft Slenderness Index (Physiological Length)</label>
+    <input type="number" id="ans_slender_phys" step="0.01"><br><br>
+
+    <label>Physiological to Maximum Length Index</label>
+    <input type="number" id="ans_phys_max" step="0.01"><br><br>
+
+    <label>Trochanteric Proportion Index (Max Length)</label>
+    <input type="number" id="ans_troch_max" step="0.01"><br><br>
+
+    <label>Trochanteric Proportion Index (Physiological Length)</label>
+    <input type="number" id="ans_troch_phys" step="0.01"><br><br>
+
+   <button onclick="checkFemurIndices()">Check Result</button>
+
+
+    <div id="indexFeedback" style="margin-top:20px;"></div>
+</div>
+
+<!-- ================= CONTROLS ================= -->
+<div id="controls">
+    <div id="instruction"></div>
+
+    <div class="display-box">
+        <span id="readout">0</span> 
+        <span id="unit">cm</span>
+    </div>
+
+    <button class="btn-check" onclick="checkMeasurement()">
+        Check Result
+    </button>
+
+    <div id="feedback"></div>
+</div>
+
+<!-- ================= JAVASCRIPT ================= -->
+<script src="js/femur.js"></script>
+
 </body>
 </html>

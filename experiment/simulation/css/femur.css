@@ -1,0 +1,201 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+    background: #ffffff;
+}
+
+/* Sidebar */
+#sidebar {
+    width: 250px;
+    background: #2c3e50;
+    color: white;
+    padding: 20px;
+}
+
+.nav-btn {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    background: #34495e;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.nav-btn.active,
+.nav-btn:hover {
+    background: #16a085;
+}
+
+/* Workspace */
+#workspace {
+    flex: 1;
+    position: relative;
+    background: #ffffff;
+}
+
+#bone {
+    position: absolute;
+    height: auto;
+    max-width:700px;
+    left: 100px;
+    top: 250px;
+    pointer-events: none;
+
+    transition:
+        transform 0.6s ease,
+        left 0.6s ease,
+        top 0.6s ease;
+}
+
+
+/* Osteometric Board */
+.board-wall {
+    position: absolute;
+    top: 50px;
+    height: 600px;
+    background: #5d4037;
+}
+
+#fixed-wall {
+    width: 45px;
+    left: 100px;
+}
+
+#movable-wall {
+    width: 40px;
+    left: 600px;
+    cursor: col-resize;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Calipers */
+#tool-caliper,
+#tool-tape,
+#tool-goniometer {
+    display: none;
+}
+
+.caliper-jaw {
+    position: absolute;
+    width: 10px;
+    height: 150px;
+    background: red;
+    top: 200px; 
+    transition: none;
+    cursor: ew-resize;
+}
+
+#caliper-jaw-1 { left: 300px; }
+#caliper-jaw-2 { left: 500px; }
+
+#caliper-bar {
+    position: absolute;
+    height: 4px;
+    background: black;
+    top: 270px;
+}
+
+/* Tape */
+#tape-ring {
+    position: absolute;
+    width: 120px;
+    height: 40px;
+    border: 3px dashed orange;
+    border-radius: 50%;
+    cursor: move;
+}
+
+#tape-label {
+    position: absolute;
+    top: -25px;
+    left: 20px;
+    background: orange;
+    color: white;
+    padding: 2px 6px;
+}
+
+/* Goniometer */
+#goniometer {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+}
+
+.gonio-center {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: black;
+    border-radius: 50%;
+    top: 90px;
+    left: 90px;
+    cursor: move;
+}
+
+.gonio-arm {
+    position: absolute;
+    width: 150px;
+    height: 4px;
+    background: purple;
+    top: 98px;
+    left: 100px;
+    transform-origin: left center;
+    cursor: pointer;
+}
+
+.gonio-arc {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 2px solid rgba(0,0,0,0.3);
+    border-radius: 50%;
+    top: 50px;
+    left: 50px;
+}
+
+/* Controls */
+#controls {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: white;
+    padding: 15px;
+    border-radius: 6px;
+    width: 300px;
+}
+
+.display-box {
+    font-size: 24px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.btn-check {
+    width: 100%;
+    padding: 10px;
+    background: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#tool-indices {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    width: 400px;
+}
+
