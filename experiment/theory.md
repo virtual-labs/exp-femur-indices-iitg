@@ -1,6 +1,3 @@
-<<<<<<< Updated upstream
-### Link your theory in here
-=======
 FEMUR
 
 The femur, commonly known as the thigh bone, is the longest, heaviest, and strongest bone in the human skeleton. It forms the structural foundation of the lower limb and plays a vital role in supporting body weight, locomotion, posture, and balance. Anatomically, the femur extends from the hip joint, where its head articulates with the acetabulum of the pelvic bone, to the knee joint, where its distal condyles articulate with the tibia and patella.
@@ -10,4 +7,3 @@ Functionally, the femur acts as a lever during walking, running, and jumping, tr
 Clinically, the femur holds immense importance due to its involvement in fractures, degenerative joint diseases, and orthopaedic procedures such as hip replacement and intramedullary nailing. Fractures of the femoral neck and shaft are especially significant in both trauma cases and geriatric populations.
 In conclusion, the femur is not only a crucial element of the human skeletal system but also a key bone for anatomical, clinical, forensic, and anthropological studies. Its size, strength, and variability provide valuable insights into human biology, adaptation, and evolution, making it an indispensable subject of study in osteology and physical anthropology.
 
->>>>>>> Stashed changes

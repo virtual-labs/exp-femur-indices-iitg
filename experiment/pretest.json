@@ -2,40 +2,14 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "The maximum length of the femur is measured between which two points?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Head of the femur and lesser trochanter",
+        "b": "Head of femur and medial condyle",
+        "c": "Most superior point of the head and most inferior point of medial condyle",
+        "d": "Greater trochanter and lateral condyle"
       },
       "explanations": {
-<<<<<<< Updated upstream
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "This is a Sample Question 2?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
-=======
         "a": "The lesser trochanter is not used as the endpoint for measuring the maximum length of the femur.",
         "b": "The head of the femur and medial condyle are not the standard anatomical landmarks used for maximum femoral length.",
         "c": "Maximum femoral length is measured as the straight distance between the most superior point of the femoral head and the most inferior point of the medial condyle.",
@@ -94,7 +68,6 @@
       },
       "correctAnswer": "b",
       "difficulty": "beginner"
->>>>>>> Stashed changes
     }
   ]
 }
