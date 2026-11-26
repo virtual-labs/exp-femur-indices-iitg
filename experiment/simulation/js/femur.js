@@ -31,7 +31,7 @@ const REAL_FEMUR = {
 };
 
 const BONE_POSES = {
-    max_length:   { left: "122px", top: "150px",  rotate: 0  },
+    max_length:   { left: "120px", top: "150px",  rotate: 0  },
     physio_length:{ left: "120px", top: "150px",  rotate: 0  },
     troch_length: { left: "120px", top: "150px",  rotate: 0  },
     shaft_diam:   { left: "250px", top: "250px", rotate: 90 },
@@ -46,7 +46,6 @@ const BONE_POSES = {
 ============================== */
 
 let currentMode = "max_length";
-let boneLocked = true;
 let currentReading = 0;
 let dragged = null;
 let rotatingArm = null;
@@ -59,14 +58,7 @@ let offset = { x: 0, y: 0 };
 function setMode(mode, event) {
 
     currentMode = mode;
-    // Show/Hide controls
-    const controls = document.getElementById("controls");
 
-    if (mode === "max_length" || mode === "physio_length" ||mode === "troch_length" ||  mode === "femur_indices") {
-        controls.style.display = "none";
-    } else {
-        controls.style.display = "block";
-    }
     document.querySelectorAll(".nav-btn")
         .forEach(btn => btn.classList.remove("active"));
 
@@ -115,31 +107,15 @@ function setMode(mode, event) {
         bone.style.top = pose.top;
         bone.style.transform = `rotate(${pose.rotate}deg)`;
     }
-    if (
-        mode === "shaft_diam" ||
-        mode === "head_trans" ||
-        mode === "head_vert" ||
-        mode === "angle_neck" ||
-        mode === "angle_torsion"
-    ) {
 
-        boneLocked = true;
-
-        bone.style.cursor = "default";
-        bone.style.boxShadow = "none";
-    }
-    else {
-
-        boneLocked = false;
-
-        bone.style.cursor = "grab";
-    }
     if (mode === "max_length" || mode === "physio_length" || mode === "troch_length") {
         document.getElementById("tool-board").style.display = "block";
         document.getElementById("movable-wall").style.left = "420px";
     }
     else if (mode === "shaft_diam" || mode === "head_trans" || mode === "head_vert") {
         document.getElementById("tool-caliper").style.display = "block";
+        document.getElementById("caliper-jaw-1").style.left = "330px";
+        document.getElementById("caliper-jaw-2").style.left = "450px";
     }
     else {
         document.getElementById("tool-goniometer").style.display = "block";
@@ -154,40 +130,12 @@ function setMode(mode, event) {
 
 document.addEventListener("mousedown", e => {
 
-if (
-    (e.target.id === "bone" && !boneLocked) ||
-    e.target.id === "movable-wall"
-) {
-
-    dragged = e.target;
-
-    const rect = dragged.getBoundingClientRect();
-
-    offset.x = e.clientX - rect.left;
-    offset.y = e.clientY - rect.top;
-}
-
-/* MOVE WHOLE CALIPER */
-    else if (
-        e.target.closest("#tool-caliper") &&
-        !e.target.closest("#caliper-slider")
+    if (
+        e.target.id === "movable-wall" ||
+        e.target.classList.contains("caliper-jaw")
     ) {
-
-        dragged = document.getElementById("tool-caliper");
-
+        dragged = e.target;
         const rect = dragged.getBoundingClientRect();
-
-        offset.x = e.clientX - rect.left;
-        offset.y = e.clientY - rect.top;
-    }
-
-    /* MOVE CALIPER SLIDER */
-    else if (e.target.closest("#caliper-slider")) {
-
-        dragged = document.getElementById("caliper-slider");
-
-        const rect = dragged.getBoundingClientRect();
-
         offset.x = e.clientX - rect.left;
         offset.y = e.clientY - rect.top;
     }
@@ -246,47 +194,22 @@ document.addEventListener("mousemove", e => {
 
             currentReading = lengthPx * scale;
         }
-        /* BONE DRAGGING */
-        else if (dragged.id === "bone") {
+
+        /* CALIPERS */
+        else if (dragged.classList.contains("caliper-jaw")) {
 
             let x = e.clientX - workspace.left - offset.x;
             let y = e.clientY - workspace.top - offset.y;
 
             dragged.style.left = x + "px";
             dragged.style.top  = y + "px";
+
+            const j1 = document.getElementById("caliper-jaw-1").getBoundingClientRect();
+            const j2 = document.getElementById("caliper-jaw-2").getBoundingClientRect();
+
+            currentReading = Math.abs(j1.left - j2.left) * CM_PER_PIXEL;
         }
-        /* CALIPER */
-        /* MOVE WHOLE CALIPER */
-        else if (dragged.id === "tool-caliper") {
 
-            let x = e.clientX - workspace.left - offset.x;
-            let y = e.clientY - workspace.top - offset.y;
-
-            dragged.style.left = x + "px";
-            dragged.style.top = y + "px";
-        }
-        else if (dragged.id === "caliper-slider") {
-
-        const caliperBody =
-            document.getElementById("caliper-body")
-            .getBoundingClientRect();
-
-        let x = e.clientX - caliperBody.left - offset.x;
-
-        const minX = 60;
-        const maxX = 520;
-
-        if (x < minX) x = minX;
-        if (x > maxX) x = maxX;
-
-        dragged.style.left = x + "px";
-
-        /* measurement calculation */
-        const fixedJawX = 40;
-        const distancePx = x - fixedJawX;
-
-        currentReading = distancePx * CM_PER_PIXEL;
-    }
         /* GONIOMETER BODY */
         else if (dragged.id === "goniometer") {
 
@@ -339,124 +262,21 @@ function getRotation(el) {
 
 
 /* ==============================
-   CORRECT ANSWERS
+   CHECK RESULT
 ============================== */
 
-const CORRECT_INDICES = {
+function checkMeasurement() {
+    const t = TARGETS[currentMode];
+    const fb = document.getElementById("feedback");
 
-    ans_slender_max: 7.82,
-
-    ans_slender_phys: 9.11,
-
-    ans_phys_max: 85.89,
-
-    ans_troch_max: 98.16,
-
-    ans_troch_phys: 114.28
-};
-
-/* ==============================
-   CALCULATE + VALIDATE
-============================== */
-
-function calculate(numId, denId, ansId) {
-
-    const num =
-        parseFloat(
-            document.getElementById(numId).value
-        );
-
-    const den =
-        parseFloat(
-            document.getElementById(denId).value
-        );
-
-    const ans =
-        document.getElementById(ansId);
-
-    /* EMPTY */
-    if (
-        isNaN(num) ||
-        isNaN(den) ||
-        den === 0
-    ) {
-
-        ans.value = "";
-
-        ans.style.background = "#fff8dc";
-        ans.style.border = "2px solid #f1c40f";
-
-        return;
-    }
-
-    /* CALCULATE */
-    const result =
-        (num * 100) / den;
-
-    ans.value =
-        result.toFixed(2);
-
-    /* CHECK ANSWER */
-    const correct =
-        CORRECT_INDICES[ansId];
-
-    const tolerance = 0.2;
-
-    if (
-        Math.abs(result - correct)
-        <= tolerance
-    ) {
-
-        /* CORRECT */
-        ans.style.background = "#d4edda";
-        ans.style.border = "3px solid green";
-        ans.style.color = "green";
-
+    if (Math.abs(parseFloat(currentReading) - t.val) <= t.tol) {
+        fb.style.color = "green";
+        fb.innerText = "✔ Correct measurement.";
     } else {
-
-        /* WRONG */
-        ans.style.background = "#f8d7da";
-        ans.style.border = "3px solid red";
-        ans.style.color = "red";
+        fb.style.color = "red";
+        fb.innerText = `✖ Incorrect. Accepted value ≈ ${t.val} ${t.unit}`;
     }
 }
-
-/* ==============================
-   LIVE UPDATE
-============================== */
-
-document.addEventListener("input", () => {
-
-    calculate(
-        "slender_num1",
-        "slender_den1",
-        "ans_slender_max"
-    );
-
-    calculate(
-        "slender_num2",
-        "slender_den2",
-        "ans_slender_phys"
-    );
-
-    calculate(
-        "phys_num",
-        "phys_den",
-        "ans_phys_max"
-    );
-
-    calculate(
-        "troch_num1",
-        "troch_den1",
-        "ans_troch_max"
-    );
-
-    calculate(
-        "troch_num2",
-        "troch_den2",
-        "ans_troch_phys"
-    );
-});
 
 
 function checkFemurIndices() {
@@ -531,194 +351,11 @@ function checkFemurIndices() {
     }
 }
 
-const bone = document.getElementById("bone");
 
-/* Disable default browser drag ghost image */
-bone.ondragstart = () => false;
 
-/* Double-click to lock/unlock */
-bone.addEventListener("dblclick", () => {
-
-    /* modes where bone must stay fixed */
-    const fixedModes = [
-        "shaft_diam",
-        "head_trans",
-        "head_vert",
-        "angle_neck",
-        "angle_torsion"
-    ];
-
-    /* do nothing in fixed modes */
-    if (fixedModes.includes(currentMode)) {
-        return;
-    }
-
-    boneLocked = !boneLocked;
-
-    if (!boneLocked) {
-
-        bone.style.cursor = "grab";
-        bone.style.boxShadow =
-            "0 8px 20px rgba(0,0,0,0.25)";
-
-    } else {
-
-        bone.style.cursor = "default";
-        bone.style.boxShadow = "none";
-    }
-});
-
-function createScale() {
-
-    const scale = document.getElementById("scale");
-    scale.innerHTML = "";
-
-    const PX_PER_CM = 16.3;
-
-    for (let i = 0; i <= 50; i++) {
-
-        const tick = document.createElement("div");
-
-        tick.style.left = (i * PX_PER_CM) + "px";
-        tick.classList.add("tick");
-
-        if (i % 10 === 0) {
-            tick.classList.add("large");
-
-            const label = document.createElement("div");
-            label.classList.add("tick-label");
-            label.style.left = (i * PX_PER_CM - 5) + "px";
-            label.innerText = i;
-
-            scale.appendChild(label);
-
-        } else if (i % 5 === 0) {
-            tick.classList.add("medium");
-        } else {
-            tick.classList.add("small");
-        }
-
-        scale.appendChild(tick);
-    }
-}
-/* ==============================
-   CREATE CALIPER SCALE
-============================== */
-
-// function createCaliperScale() {
-
-//     const scale = document.querySelector(".caliper-scale");
-
-//     scale.innerHTML = "";
-
-//     const PX_PER_CM = 20;
-
-//     for (let i = 0; i <= 20; i++) {
-
-//         const tick = document.createElement("div");
-
-//         tick.classList.add("cal-tick");
-
-//         tick.style.left = (i * PX_PER_CM) + "px";
-
-//         if (i % 10 === 0) {
-//             tick.classList.add("large");
-//         }
-//         else if (i % 5 === 0) {
-//             tick.classList.add("medium");
-//         }
-//         else {
-//             tick.classList.add("small");
-//         }
-
-//         scale.appendChild(tick);
-
-//         /* labels every 1 cm */
-//         const label = document.createElement("div");
-
-//         label.classList.add("cal-label");
-
-//         label.style.left = (i * PX_PER_CM) + "px";
-
-//         label.innerText = i;
-
-//         scale.appendChild(label);
-//     }
-// }
-
-/* ==============================
-   GONIOMETER SCALE
-============================== */
-
-function createGonioScale() {
-
-    const scale =
-        document.getElementById("gonio-scale");
-
-    scale.innerHTML = "";
-
-    const radius = 78;
-
-    for (let deg = 0; deg < 360; deg += 5) {
-
-        const tick =
-            document.createElement("div");
-
-        tick.classList.add("gonio-tick");
-
-        let tickLength = 6;
-
-        if (deg % 10 === 0) {
-            tickLength = 12;
-        }
-
-        const angle =
-            (deg - 90) * Math.PI / 180;
-
-        const x =
-            90 + radius * Math.cos(angle);
-
-        const y =
-            90 + radius * Math.sin(angle);
-
-        tick.style.left = x + "px";
-        tick.style.top = y + "px";
-
-        tick.style.height = tickLength + "px";
-
-        tick.style.transform =
-            `translate(-50%, -100%) rotate(${deg}deg)`;
-
-        scale.appendChild(tick);
-
-        /* labels */
-        if (deg % 20 === 0) {
-
-            const label =
-                document.createElement("div");
-
-            label.classList.add("gonio-label");
-
-            label.innerText = deg;
-
-            const lx =
-                90 + (radius - 18) * Math.cos(angle);
-
-            const ly =
-                90 + (radius - 18) * Math.sin(angle);
-
-            label.style.left = lx + "px";
-            label.style.top = ly + "px";
-
-            scale.appendChild(label);
-        }
-    }
-}
 /* ==============================
    INITIAL LOAD
 ============================== */
 
 setMode("max_length");
-createScale();
-// createCaliperScale();
-createGonioScale();                                            
+
