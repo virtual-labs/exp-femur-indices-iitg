@@ -346,13 +346,13 @@ const CORRECT_INDICES = {
 
     ans_slender_max: 7.82,
 
-    ans_slender_phys: 9.11,
+    ans_slender_phys: 8,
 
-    ans_phys_max: 85.89,
+    ans_phys_max: 96.85,
 
-    ans_troch_max: 98.16,
+    ans_troch_max: 98.31,
 
-    ans_troch_phys: 114.28
+    ans_troch_phys: 101.50
 };
 
 /* ==============================
@@ -573,32 +573,45 @@ function createScale() {
     const scale = document.getElementById("scale");
     scale.innerHTML = "";
 
-    const PX_PER_CM = 16.3;
+    const PX_PER_CM = 16.3;   // same as before
 
-    for (let i = 0; i <= 50; i++) {
+    /* one tick per millimetre, 0 to 50 cm */
+    for (let j = 0; j <= 500; j++) {
 
         const tick = document.createElement("div");
-
-        tick.style.left = (i * PX_PER_CM) + "px";
         tick.classList.add("tick");
+        tick.style.left = (j * PX_PER_CM / 10) + "px";
 
-        if (i % 10 === 0) {
+        if (j % 100 === 0) {            // every 10 cm
             tick.classList.add("large");
-
-            const label = document.createElement("div");
-            label.classList.add("tick-label");
-            label.style.left = (i * PX_PER_CM - 5) + "px";
-            label.innerText = i;
-
-            scale.appendChild(label);
-
-        } else if (i % 5 === 0) {
+        } else if (j % 50 === 0) {      // every 5 cm
             tick.classList.add("medium");
-        } else {
-            tick.classList.add("small");
+        } else if (j % 10 === 0) {      // every 1 cm
+            tick.style.height = "14px";
+        } else if (j % 5 === 0) {       // every 0.5 cm
+            tick.style.height = "9px";
+        } else {                        // every 1 mm
+            tick.style.height = "5px";
         }
 
         scale.appendChild(tick);
+
+        /* label every 1 cm */
+        if (j % 10 === 0) {
+            const cm = j / 10;
+            const label = document.createElement("div");
+            label.classList.add("tick-label");
+            label.innerText = cm;
+            label.style.left = (j * PX_PER_CM / 10) + "px";
+            label.style.transform = "translateX(-50%)";
+
+            if (cm % 5 === 0) {
+                label.style.fontWeight = "bold";
+            } else {
+                label.style.fontSize = "9px";
+            }
+            scale.appendChild(label);
+        }
     }
 }
 /* ==============================

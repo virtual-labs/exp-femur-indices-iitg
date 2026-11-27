@@ -1,191 +1,165 @@
 Femur Measurements
+1. Maximum Length
 
 Method
-	•	Maximum length: 
-	•	Place the femur on the osteometric board
-	•	Keep the posterior surface of the femur resting on the board.
-	•	Ensure the shaft lies straight and aligned.
-	•	Proximal end positioning
-	•	Move the fixed vertical upright against the most superior point of the femoral head.
-	•	 Distal end positioning
-	•	Slide the moveable upright to touch the lowest point of the medial or lateral femoral condyle , whichever is lower
-	•	 Read the measurement
-	•	Record the distance between the two uprights in centimeters (cm).
-	•	This value is the maximum femoral length.
 
-Precautions
-	•	 Use a proper osteometric board with fixed and movable vertical ends for accurate measurement.
-	•	 Ensure the femur is clean and dry (no debris or soft tissue attached).
-	•	Place the femur in correct anatomical position – shaft horizontal and condyles resting evenly on the fixed end.
-	•	 Keep the posterior surfaces of the condyles in contact with the vertical board.
-	•	 Ensure the head of the femur touches the movable end of the board gently without compression.
-	•	 Do not tilt or rotate the bone during measurement.
-	•	 Avoid parallax error – read the scale at eye level.
-	•	 Apply only light pressure while adjusting the movable end.
-	•	 Measure to the nearest millimeter for precision.
-	•	  Repeat the measurement at least twice and record the average value.
-
-	•	Physiological Length:
-	•	Place the femur in anatomical position .
-	•	Identify:
-	•	The highest point on the head.
-	•	Slide the moveable upright to touch the lowest point on condylar plane.
+Place the femur on the osteometric board with its posterior surface resting on the board.
+Make sure the shaft lies straight and aligned.
+Proximal end: move the fixed vertical upright against the most superior point of the femoral head.
+Distal end: slide the movable upright to touch the lowest point of the medial or lateral condyle, whichever is lower.
+Reading: record the distance between the two uprights in cm. This is the maximum femoral length.
 
 Precautions
 
-	•	Use a flat, firm surface or an osteometric board for accurate alignment.
-	•	Ensure the femur is placed in the correct anatomical position.
-	•	Identify the landmarks properly:
-	•	The bone should lie straight, not tilted or rotated.
-	•	The long axis of the femur must be parallel to the measuring scale.
-	•	Avoid including osteophytes, damaged edges, or deformities in the measurement.
-	•	Keep the movable end of the osteometric board snug against the condyle without excessive pressure.
-	•	Read the measurement at eye level to avoid parallax error.
-	•	Record the value in millimeters or centimeters clearly and immediately.
-	•	Repeat the measurement at least twice and take the average for better accuracy.
+Use a proper osteometric board with fixed and movable vertical ends.
+Make sure the femur is clean and dry, with no debris or soft tissue.
+Keep the femur in the correct anatomical position, with the shaft horizontal.
+Keep the posterior surfaces of the condyles in contact with the vertical board.
+Let the bone touch the end of the board gently, without compression.
+Do not tilt or rotate the bone.
+Read the scale at eye level to avoid parallax error.
+Apply only light pressure when adjusting the movable end.
+Measure to the nearest millimeter.
+Repeat at least twice and record the average.
+2. Physiological Length
 
+Method
 
-
-	•	Maximum Trochanteric Length:
-i)Identify the upper landmark:
-	•	Locate the highest point of the greater trochanter.
-ii) Locate the lowest point of the femoral condyles 
-     (medial or lateral, whichever is lower) .
-	•	Record the distance shown in the spreading caliper.
-
- Precautions
-
-	•	Use a clean, dry bone free from dirt or soft tissue.
-	•	Ensure the femur is intact and undamaged, especially at the head and trochanteric region.
-	•	Use a proper osteometric board (or sliding calipers if specified).
-	•	Place the femur in correct anatomical position on the board.
-	•	Identify the landmarks correctly:
-	•	Highest point of the greater trochanter
-	•	Lowest point of the femoral condyles
-	•	Ensure the bone is firmly in contact with both the fixed and movable ends of the board.
-	•	Keep the femur straight and not tilted or rotated during measurement.
-	•	Apply gentle pressure only to avoid displacement or damage.
-	•	Read the scale at eye level to avoid parallax error.
-	•	Record the measurement in millimeters for accuracy.
-	•	Repeat the measurement at least twice and take the average to reduce error.
-
-
-	•	Middle Shaft Diameter:
-	•	Determine the mid-shaft point:
-	•	Measure the maximum length of the femur.
-	•	Mark the point at the half of this length along the shaft.
-	•	This point represents the middle of the shaft.
-	•	Take the measurement adjusting the jaw of the sliding caliper until they just touch the bone without compression.
+Place the femur in anatomical position.
+Identify the highest point of the head.
+Slide the movable upright to touch the lowest point on the condylar plane.
 
 Precautions
 
-	•	Ensure the bone is clean, dry, and free of soft tissue or debris.
-	•	Identify the true mid-shaft point accurately (midpoint between proximal and distal ends).
-	•	Place the femur on a stable, flat surface to avoid tilting or movement.
-	•	Use a properly calibrated vernier calliper or osteometric board.
-	•	Hold the calliper perpendicular to the long axis of the femur.
-	•	Measure the minimum transverse diameter (not an oblique or maximum width).
-	•	Apply gentle, consistent pressure—do not compress or damage the bone.
-	•	Avoid measuring over irregularities, ridges, or pathological deformities.
-	•	Take at least two readings and record the average to reduce error.
+Use a flat, firm surface or an osteometric board for accurate alignment.
+Make sure the femur is in the correct anatomical position.
+Identify the landmarks properly.
+Keep the bone straight, not tilted or rotated.
+Keep the long axis of the femur parallel to the measuring scale.
+Exclude osteophytes, damaged edges and deformities.
+Keep the movable end snug against the condyle, without excessive pressure.
+Read at eye level to avoid parallax error.
+Record the value clearly and immediately, in mm or cm.
+Repeat at least twice and take the average.
+3. Maximum Trochanteric Length
 
+Method
 
-	•	Transverse Diameter of Head:
-	•	Identify the most prominent points on the medial and lateral aspects of the femoral head.
-	•	Open the sliding caliper and place:
-	•	One jaw on the most projecting point on the medial surface of the femoral head.
-	•	The other jaw on the most projecting point on the lateral surface of the femoral head.
-	•	 Read and record the maximum transverse distance between the two points.
-
-Precautions
-
-	•	Identify the true maximum width of the femoral head before measuring.
-	•	Use a properly calibrated Vernier calliper / sliding calliper.
-	•	Place the calliper exactly across the widest part of the head, not obliquely.
-	•	Keep the calliper perpendicular to the long axis of the femur.
-	•	Apply gentle pressure only; do not compress or damage the bone.
-	•	Avoid including the neck of femur in the measurement.
-	•	Read the scale at eye level to prevent parallax error.
-	•	Take the measurement at least twice and record the average for accuracy.
-
-
-
-
-	•	Vertical Diameter of Head:
-	•	Identify the highest point(most superior) and the lowest point(most inferior) on the articular surface of the femoral head.
-	•	Open the sliding caliper and place:
-	•	One jaw on the most superior point of the head.
-	•	The other jaw on the most inferior point of the head.
-	•	 Read and record the maximum vertical distance between the two points.
+Upper landmark: locate the highest point of the greater trochanter.
+Lower landmark: locate the lowest point of the femoral condyles (medial or lateral, whichever is lower).
+Record the distance shown on the caliper or board.
 
 Precautions
 
-	•	Identify the true margins of the articular surface of the femoral head accurately.
-	•	Hold the femur in its anatomical position to avoid oblique measurement.
-	•	Place the calliper jaws exactly at the highest and lowest points of the head (superior and inferior poles).
-	•	Make sure the calliper is perpendicular to the long axis of the neck/head, not slanted.
-	•	Apply gentle and uniform pressure with the calliper; do not compress or damage the bone.
-	•	Check that the calliper is properly zeroed before taking the reading.
+Use a clean, dry bone free of dirt and soft tissue.
+Make sure the femur is intact, especially at the head and trochanteric region.
+Use a proper osteometric board (or sliding calipers if specified).
+Place the femur in the correct anatomical position.
+Identify the landmarks correctly: the highest point of the greater trochanter and the lowest point of the condyles.
+Keep the bone firmly in contact with both the fixed and movable ends.
+Keep the femur straight, not tilted or rotated.
+Apply gentle pressure only.
+Read at eye level to avoid parallax error.
+Record in millimeters.
+Repeat at least twice and take the average.
+4. Middle Shaft Diameter
 
-	•	Repeat the measurement at least twice and record the average for accuracy.
+Method
 
-
-	•	Collodiphysial Angle(Neck-shaft angle):
-	•	Draw the axis of the femoral shaft:
-	•	Mark two points along the midline of the shaft(one proximal , one distal).
-	•	Join these two points with a straight line shaft axis.
-	•	Draw the axis of the femoral neck:
-	•	Identify the center of the femoral head.
-	•	Identify the midpoint of the base of the neck.
-	•	Join these two points with a straight line(neck axis).
-	•	 Measure the angle:
-	•	Place the center of the goniometer at the point where the neck axis meets the shaft axis.
-	•	Measure the angle between two lines.
-	•	This angle is the collodialphysial angle.
-
-
+Measure the maximum length of the femur.
+Mark the point at half of this length along the shaft (the mid-shaft).
+Adjust the jaws of the sliding caliper until they just touch the bone, without compression.
 
 Precautions
-	•	Place the femur on a flat surface to avoid tilting or rotation.
-	•	Align the shaft correctly – the femoral shaft should lie in one plane.
-	•	Identify the true axis of the neck (center of head to center of neck) accurately.
-	•	Identify the true axis of the shaft (midline of the shaft, not the border).
-	•	Use a properly calibrated goniometer or protractor.
-	•	Avoid measuring on damaged or deformed bones.
-	•	Do not include osteophytes or irregular margins while drawing axes.
-	•	Record the angle in degrees clearly and repeat measurement if needed to confirm accuracy.
 
+Make sure the bone is clean, dry and free of soft tissue.
+Identify the true mid-shaft point accurately.
+Place the femur on a stable, flat surface.
+Use a calibrated vernier or sliding caliper.
+Hold the caliper perpendicular to the long axis of the femur.
+Measure the minimum transverse diameter, not an oblique or maximum width.
+Apply gentle, consistent pressure.
+Avoid irregularities, ridges and pathological deformities.
+Take at least two readings and record the average.
+5. Transverse Diameter of Head
 
-	•	Femoral Torsion Angle:
-	•	Define the condylar axis:
-	•	Draw or imagine a line joining the most posterior points of the both femoral condyles.
-	•	This line represents the distal femoral axis.
-	•	Define the neck axis:
-	•	Identify the center of the femoral head.
-	•	Identify the center of the femoral neck at its narrowest part.
-	•	Draw a line joining these two points(axis of femoral neck).
+Method
 
-
-	•	Measure the angle
-
-	•	Using a goniometer, measure the angle between  the neck axis ,and the condylar axis.
-	•	The angle opened anteriorly is the femoral torsion angle.
+Identify the most prominent points on the medial and lateral aspects of the femoral head.
+Place one jaw of the sliding caliper on the most projecting point of the medial surface.
+Place the other jaw on the most projecting point of the lateral surface.
+Read and record the maximum transverse distance.
 
 Precautions
-	•	Identify the correct side (right or left femur) before measurement.
-	•	Place the femur on a flat, stable horizontal surface or osteometric board.
-	•	Make sure the posterior surfaces of both condyles lie in the same horizontal plane (true distal reference).
-	•	The shaft should not be tilted or rotated during positioning.
-	•	Clearly define the axis of the femoral neck (center of head to center of neck).
-	•	Use a proper goniometer / torsion meter and check that it is zeroed correctly before reading.
-	•	Keep the eye perpendicular to the scale to avoid parallax error.
-	•	Apply gentle handling to avoid changing alignment while measuring.
-	•	Take the reading at least twice and use the average for accuracy.
-	•	Record the angle in degrees and note the side measured.
 
+Identify the true maximum width of the head before measuring.
+Use a calibrated vernier or sliding caliper.
+Place the caliper across the widest part of the head, not obliquely.
+Keep the caliper perpendicular to the long axis of the femur.
+Apply gentle pressure only.
+Do not include the neck in the measurement.
+Read at eye level to prevent parallax error.
+Measure at least twice and record the average.
+6. Vertical Diameter of Head
 
+Method
 
+Identify the most superior and most inferior points on the articular surface of the head.
+Place one jaw of the sliding caliper on the most superior point.
+Place the other jaw on the most inferior point.
+Read and record the maximum vertical distance.
 
+Precautions
 
- 
+Identify the true margins of the articular surface accurately.
+Hold the femur in anatomical position to avoid an oblique measurement.
+Place the jaws exactly at the superior and inferior poles of the head.
+Keep the caliper perpendicular to the long axis of the neck/head, not slanted.
+Apply gentle, uniform pressure.
+Check that the caliper is zeroed before reading.
+Repeat at least twice and record the average.
+7. Collodiaphyseal Angle (Neck-Shaft Angle)
 
+Method
+
+Shaft axis: mark two points along the midline of the shaft (one proximal, one distal) and join them with a straight line.
+Neck axis: identify the center of the femoral head and the midpoint of the base of the neck, and join them with a straight line.
+Measure: place the center of the goniometer where the neck axis meets the shaft axis, and read the angle between the two lines.
+
+Precautions
+
+Place the femur on a flat surface to avoid tilting or rotation.
+Keep the shaft in one plane.
+Identify the true neck axis (center of head to center of neck).
+Identify the true shaft axis (the midline, not the border).
+Use a calibrated goniometer or protractor.
+Avoid damaged or deformed bones.
+Exclude osteophytes and irregular margins when drawing axes.
+Record the angle in degrees and repeat to confirm.
+8. Femoral Torsion Angle
+
+Method
+
+Condylar axis: draw or imagine a line joining the most posterior points of both femoral condyles. This is the distal femoral axis.
+Neck axis: identify the center of the head and the center of the neck at its narrowest part, and join them with a line.
+Measure: use a goniometer to measure the angle between the neck axis and the condylar axis. The angle opening anteriorly is the femoral torsion angle.
+
+Precautions
+
+Identify the side (right or left) before measuring.
+Place the femur on a flat, stable surface or osteometric board.
+Make sure the posterior surfaces of both condyles lie in the same horizontal plane.
+Do not tilt or rotate the shaft.
+Define the neck axis clearly.
+Use a goniometer or torsion meter that is zeroed correctly.
+Keep your eye perpendicular to the scale.
+Handle the bone gently so the alignment does not shift.
+Read at least twice and use the average.
+Record the angle in degrees and note the side.
+
+Inconsistencies in the original that you may want to check:
+
+Maximum length: the method puts the fixed upright at the head, but the precautions say the condyles rest on the fixed end and the head touches the movable end. Standard practice is condyles against the fixed end and the head against the movable one, so pick one version.
+Physiological length: this is normally the bicondylar length, with both condyles touching the board's vertical end. The original does not say so.
+Mid-shaft diameter: the precautions ask for the minimum transverse diameter, but mid-shaft is usually recorded as both the anteroposterior and transverse diameters.
+Trochanteric length: the method mentions a spreading caliper, but the precautions say osteometric board.
